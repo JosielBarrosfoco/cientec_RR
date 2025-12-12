@@ -37,6 +37,7 @@
     "wrangler": "^4.33.0"
   },
   "scripts": {
+    "prebuild": "node scripts/create-worker-config.js",
     "build": "tsc -b && vite build",
     "build:vercel": "tsc -p tsconfig.app.json && tsc -p tsconfig.node.json && vite build",
     "cf-typegen": "wrangler types",
