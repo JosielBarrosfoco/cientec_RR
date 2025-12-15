@@ -57,15 +57,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <MapPin size={18} className="text-primary-light flex-shrink-0 mt-0.5" />
-                <span className="text-white/80 text-sm">Rua da Inovação, 1000<br />Roraima, Brasil</span>
+                <span className="text-white/80 text-sm">Av. Brigadeiro Eduardo Gomes, 74<br />Bairro dos Estados<br />Boa Vista-Roraima<br />CEP: 69.305-455</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={18} className="text-primary-light flex-shrink-0" />
-                <span className="text-white/80 text-sm">+55 (95) 3621-3000</span>
+                <span className="text-white/80 text-sm">+55 95 991597963</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={18} className="text-primary-light flex-shrink-0" />
-                <span className="text-white/80 text-sm">contato@cientec.org.br</span>
+                <span className="text-white/80 text-sm">cientecrr@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -76,9 +76,18 @@ export default function Footer() {
             <p className="text-white/60 text-sm text-center md:text-left">
               &copy; {new Date().getFullYear()} CienTec. Todos os direitos reservados.
             </p>
-            <div className="flex space-x-6 text-sm text-white/60">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-white/60">
               <a href="#" className="hover:text-primary-light transition-colors">Política de Privacidade</a>
               <a href="#" className="hover:text-primary-light transition-colors">Termos de Uso</a>
+              <span className="hidden md:inline">|</span>
+              <a 
+                href="https://portifolio-woad-iota.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary-light transition-colors"
+              >
+                Criado por <span className="font-semibold">Josiel.dev</span>
+              </a>
             </div>
           </div>
         </div>

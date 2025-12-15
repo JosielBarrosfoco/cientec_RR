@@ -26,9 +26,10 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-bold text-primary-dark mb-2">Endereço</h3>
                 <p className="text-text/80 leading-relaxed">
-                  Rua da Inovação, 1000<br />
-                  Centro de Desenvolvimento<br />
-                  Roraima, Brasil - CEP 69300-000
+                  Av. Brigadeiro Eduardo Gomes, 74<br />
+                  Bairro dos Estados<br />
+                  Boa Vista-Roraima<br />
+                  CEP: 69.305-455
                 </p>
               </div>
             </div>
@@ -40,8 +41,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-bold text-primary-dark mb-2">Telefone</h3>
                 <p className="text-text/80">
-                  +55 (95) 3621-3000<br />
-                  +55 (95) 98100-0000
+                  +55 95 991597963
                 </p>
               </div>
             </div>
@@ -53,8 +53,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-bold text-primary-dark mb-2">E-mail</h3>
                 <p className="text-text/80">
-                  contato@cientec.org.br<br />
-                  projetos@cientec.org.br
+                  cientecrr@gmail.com
                 </p>
               </div>
             </div>
