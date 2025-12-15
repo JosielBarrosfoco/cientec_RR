@@ -7,14 +7,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* About */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary-dark font-bold text-xl">C</span>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-bold">CienTec</h3>
-                <p className="text-xs text-white/60">Inovação & Sustentabilidade</p>
-              </div>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/images/logo-cientec.png" 
+                alt="CienTec - Centro de Inovação, Empreendedorismo e Tecnologia de Roraima" 
+                className="h-12 md:h-16 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 leading-relaxed mb-6 max-w-md">
               Liderança e Inovação para um Futuro Sustentável. Transformando comunidades através da educação, 

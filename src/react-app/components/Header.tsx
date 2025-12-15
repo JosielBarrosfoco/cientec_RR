@@ -18,15 +18,13 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">C</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-display font-bold text-primary-dark">
-                CienTec
-              </h1>
-              <p className="text-xs text-neutral-300 -mt-1">Inovação & Sustentabilidade</p>
-            </div>
+            <a href="#">
+              <img 
+                src="/images/logo-cientec.png" 
+                alt="CienTec - Centro de Inovação, Empreendedorismo e Tecnologia de Roraima" 
+                className="h-12 md:h-16 w-auto object-contain"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
