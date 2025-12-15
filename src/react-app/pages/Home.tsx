@@ -6,6 +6,7 @@ import Team from '@/react-app/components/Team';
 import Participate from '@/react-app/components/Participate';
 import Contact from '@/react-app/components/Contact';
 import Footer from '@/react-app/components/Footer';
+import WhatsAppButton from '@/react-app/components/WhatsAppButton';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Participate />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
