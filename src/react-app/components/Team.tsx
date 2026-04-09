@@ -23,18 +23,6 @@ export default function Team() {
       linkedin: 'https://www.linkedin.com/in/ivan-gonzalo/',
     },
     {
-      name: 'Tainisy Brito Santos',
-      role: 'Diretora Educacional Pedagógica',
-      image: '/images/diretora-educacional-tainisy-brito.png',
-      bio: 'Sendo responsável pela coordenação das diretrizes pedagógicas e pelo desenvolvimento de programas educacionais alinhados à missão institucional. Sua atuação é pautada na qualidade do ensino, inovação metodológica e formação contínua. Contribui para o fortalecimento educacional e o impacto social do Instituto.',
-    },
-    {
-      name: 'MILLENA BRUNA SILVA LOPES',
-      role: 'Diretora de Compliance e Responsabilidade Socioambiental',
-      image: '/images/diretora-compliance-millena-bruna.png',
-      bio: 'Sendo responsável pela implementação e monitoramento das políticas de conformidade, integridade e governança institucional. Sua atuação assegura o cumprimento das normas legais, éticas e regulatórias, promovendo transparência e gestão responsável. Contribui para o desenvolvimento sustentável e o fortalecimento do compromisso socioambiental do Instituto.',
-    },
-    {
       name: 'André Mateus Araújo',
       role: 'Diretor Administrativo-Financeiro',
       image: '/images/diretor-administrativo-andre-mateus.png',
