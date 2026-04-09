@@ -79,7 +79,7 @@ export default function Footer() {
               <a href="#" className="hover:text-primary-light transition-colors">Termos de Uso</a>
               <span className="hidden md:inline">|</span>
               <a 
-                href="https://portifolio-woad-iota.vercel.app/" 
+                href="https://josielbarros.dev/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-primary-light transition-colors"
