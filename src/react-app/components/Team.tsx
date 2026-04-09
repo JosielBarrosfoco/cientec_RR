@@ -7,13 +7,14 @@ export default function Team() {
       role: 'Presidente',
       image: '/images/presidente-luci-campelo.png',
       bio: 'Especialista em consultoria financeira, assessoria e consultoria de negócios, com sólida experiência em planejamento financeiro e análise financeira. Atua também em consultoria educacional e política, promovendo segurança financeira de longo prazo e sustentabilidade patrimonial. Exercendo a presidência do Instituto com liderança técnica, ética e compromisso institucional com resultados consistentes.',
-      linkedin: 'https://www.linkedin.com/in/luci-campelo-38194269/',
+      linkedin: 'https://www.linkedin.com/in/luci-campelo-38194269/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
       name: 'Glória dos Santos Almeida',
       role: 'Diretora Jurídico-Institucional',
       image: '/images/diretora-juridica-gloria-almeida.png',
       bio: 'Atua como Diretora Jurídico-Institucional, sendo responsável pela condução estratégica das diretrizes jurídicas e pelo fortalecimento da governança institucional. Possui atuação pautada na ética, na conformidade legal e na segurança das decisões organizacionais. Contribui para a sustentabilidade, credibilidade e integridade institucional do Instituto.',
+      linkedin: 'https://www.linkedin.com/in/gloria-dos-s-almeida-barbosa-67b10a1b0/?originalSubdomain=br',
     },
     {
       name: 'Candice Diniz',
