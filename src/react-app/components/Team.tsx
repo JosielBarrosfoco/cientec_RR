@@ -16,6 +16,12 @@ export default function Team() {
       bio: 'Atua como Diretora Jurídico-Institucional, sendo responsável pela condução estratégica das diretrizes jurídicas e pelo fortalecimento da governança institucional. Possui atuação pautada na ética, na conformidade legal e na segurança das decisões organizacionais. Contribui para a sustentabilidade, credibilidade e integridade institucional do Instituto.',
     },
     {
+      name: 'Candice Diniz',
+      role: 'Diretora Educacional e Pedagógica',
+      image: '/images/diretora-educacional-candice-diniz.png',
+      bio: 'Educar é cuidar de pessoas e construir futuros. Seguimos firmes no compromisso com ensino de qualidade, metodologia bem estruturada e evolução contínua.',
+    },
+    {
       name: 'IVAN GONZALO',
       role: 'Diretor de Inovação e Tecnologia',
       image: '/images/diretor-inovacao-ivan-gonzalo.png',
