@@ -11,7 +11,7 @@ export default function Footer() {
               <img 
                 src="/images/logo-cientec.png" 
                 alt="CienTec - Centro de Inovação, Empreendedorismo e Tecnologia de Roraima" 
-                className="h-12 md:h-16 w-auto object-contain brightness-0 invert"
+                className="h-12 md:h-16 w-auto max-w-[240px] object-contain grayscale invert mix-blend-screen"
               />
             </div>
             <p className="text-white/80 leading-relaxed mb-6 max-w-md">
@@ -65,12 +65,12 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-white/60">
               
               <a 
-                href="https://josielbarros.dev/" 
+                href="https://plagesystem.com.br/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-primary-light transition-colors"
               >
-                Criado por <span className="font-semibold">Josiel.dev</span>
+                Desenvolvido por <span className="font-semibold text-white">PLAGE SYSTEM</span>
               </a>
             </div>
           </div>
