@@ -12,8 +12,7 @@ export default function About() {
             Sobre Nós
           </h2>
           <p className="text-xl text-text/80 max-w-3xl mx-auto leading-relaxed">
-            Somos uma organização comprometida em promover o desenvolvimento sustentável através da inovação, 
-            educação e empreendedorismo, criando impacto positivo nas comunidades que servimos.
+            Fundado em 2024, o Centro de Inovação, Empreendedorismo e Tecnologia de Roraima (CIENTEC-RR) conecta produtores rurais, empreendedores e comunidades a conhecimento científico, capacitações e soluções de gestão.
           </p>
         </div>
 
@@ -24,8 +23,7 @@ export default function About() {
             </div>
             <h3 className="font-display text-2xl font-bold text-primary-dark mb-4">Missão</h3>
             <p className="text-text/80 leading-relaxed">
-              Promover o desenvolvimento regional sustentável através da inovação, educação e pesquisa aplicada, 
-              capacitando pessoas e organizações para enfrentar os desafios contemporâneos com soluções criativas e eficazes.
+              Tornar o conhecimento acessível e útil para todos, promovendo o desenvolvimento sustentável de Roraima.
             </p>
           </div>
 
@@ -35,8 +33,7 @@ export default function About() {
             </div>
             <h3 className="font-display text-2xl font-bold text-primary-dark mb-4">Visão</h3>
             <p className="text-text/80 leading-relaxed">
-              Ser referência nacional em inovação social e desenvolvimento sustentável, reconhecida pela excelência 
-              em educação, pesquisa e pela transformação positiva das comunidades onde atuamos.
+              Ser reconhecido até 2030 como um centro de excelência em inovação, educação e empreendedorismo em Roraima e no Brasil, com impacto internacional, fomentando novos negócios, modelos sustentáveis e a troca de conhecimento.
             </p>
           </div>
 
@@ -56,11 +53,11 @@ export default function About() {
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-complement rounded-full mr-3"></div>
-                <p className="text-text/80">Transparência e Ética</p>
+                <p className="text-text/80">Ética e Transparência</p>
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-primary-light rounded-full mr-3"></div>
-                <p className="text-text/80">Compromisso Social</p>
+                <p className="text-text/80">Inclusão e Empreendedorismo e Desenvolvimento Regional</p>
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-accent-bright rounded-full mr-3"></div>
