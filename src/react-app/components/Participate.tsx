@@ -1,37 +1,11 @@
-import { Handshake, Heart, Briefcase, Users, DollarSign, ArrowRight } from 'lucide-react';
+import { Handshake, BookOpen, Briefcase, Sprout, ArrowRight } from 'lucide-react';
 
 export default function Participate() {
   const ways = [
-    {
-      icon: Handshake,
-      title: 'Torne-se Parceiro',
-      description: 'Estabeleça parcerias estratégicas e colabore em projetos de impacto social e inovação.',
-      cta: 'Saiba Mais',
-    },
-    {
-      icon: Briefcase,
-      title: 'Contrate Serviços',
-      description: 'Utilize nossa expertise em assessoria técnica, estudos e desenvolvimento de projetos.',
-      cta: 'Ver Serviços',
-    },
-    {
-      icon: Users,
-      title: 'Seja Voluntário',
-      description: 'Contribua com seu tempo e conhecimento em projetos sociais e educacionais.',
-      cta: 'Inscreva-se',
-    },
-    {
-      icon: Heart,
-      title: 'Apoie Projetos',
-      description: 'Apoie iniciativas específicas que transformam vidas e comunidades.',
-      cta: 'Conhecer Projetos',
-    },
-    {
-      icon: DollarSign,
-      title: 'Faça uma Doação',
-      description: 'Contribua financeiramente para a continuidade de nossos programas e projetos.',
-      cta: 'Doar Agora',
-    },
+    { icon: Handshake, title: 'Parcerias Institucionais', description: 'Conecte sua organização a iniciativas de inovação, educação e desenvolvimento regional.', cta: 'Conversar sobre parceria', href: '#contato' },
+    { icon: Briefcase, title: 'Assessoria e Projetos', description: 'Conheça as possibilidades de assessoria técnica, estudos e desenvolvimento de projetos.', cta: 'Conhecer as áreas', href: '#areas' },
+    { icon: BookOpen, title: 'Capacitações e Eventos', description: 'Acompanhe as experiências em formação empreendedora, tecnologia e troca de conhecimentos.', cta: 'Ver registros', href: '#resultados' },
+    { icon: Sprout, title: 'Assistência Técnica Rural', description: 'Entre em contato sobre ações de Assistência Técnica e Extensão Rural (ATER).', cta: 'Falar com a equipe', href: '#contato' },
   ];
 
   return (
@@ -45,7 +19,7 @@ export default function Participate() {
             Como Participar
           </h2>
           <p className="text-xl text-text/80 max-w-3xl mx-auto">
-            Junte-se a nós na construção de um futuro mais sustentável e inovador
+            Saiba como se conectar às frentes de atuação do CIENTEC-RR
           </p>
         </div>
 
@@ -66,10 +40,10 @@ export default function Participate() {
                 <p className="text-text/80 leading-relaxed mb-6">
                   {way.description}
                 </p>
-                <button className="inline-flex items-center text-primary hover:text-accent font-semibold transition-colors group">
+                <a href={way.href} className="inline-flex items-center text-primary hover:text-accent font-semibold transition-colors group">
                   {way.cta}
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
-                </button>
+                </a>
               </div>
             );
           })}
