@@ -1,55 +1,16 @@
-import { BookOpen, Lightbulb, Users, FileText, Globe, Calendar, TrendingUp, Briefcase } from 'lucide-react';
+import { BookOpen, Lightbulb, Sprout, FileText, Globe, Calendar, TrendingUp, Briefcase, MonitorSmartphone } from 'lucide-react';
 
 export default function Services() {
   const services = [
-    {
-      icon: BookOpen,
-      title: 'Educação & Pesquisa',
-      description: 'Programas educacionais e pesquisas aplicadas que geram conhecimento e capacitam profissionais.',
-      color: 'primary',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Empreendedorismo',
-      description: 'Apoio a empreendedores e startups com mentoria, capacitação e desenvolvimento de negócios.',
-      color: 'accent',
-    },
-    {
-      icon: Lightbulb,
-      title: 'Inovação',
-      description: 'Desenvolvimento de soluções inovadoras para desafios sociais, ambientais e econômicos.',
-      color: 'primary-light',
-    },
-    {
-      icon: Briefcase,
-      title: 'Assessoria Técnica',
-      description: 'Consultoria especializada em gestão, planejamento estratégico e desenvolvimento organizacional.',
-      color: 'accent-bright',
-    },
-    {
-      icon: Users,
-      title: 'Projetos Sociais',
-      description: 'Iniciativas voltadas para inclusão social, desenvolvimento comunitário e geração de impacto positivo.',
-      color: 'complement',
-    },
-    {
-      icon: FileText,
-      title: 'Estudos Técnicos e Econômicos',
-      description: 'Análises aprofundadas e estudos de viabilidade para projetos de desenvolvimento regional.',
-      color: 'primary',
-    },
-    {
-      icon: Calendar,
-      title: 'Eventos',
-      description: 'Organização de conferências, workshops e seminários sobre temas estratégicos e inovação.',
-      color: 'accent',
-    },
-    {
-      icon: Globe,
-      title: 'Internacionalização',
-      description: 'Conexões globais e parcerias internacionais para expandir horizontes e compartilhar conhecimento.',
-      color: 'primary-light',
-    },
+    { icon: BookOpen, title: 'Educação e Pesquisa', description: 'Capacitações, formação e produção de conhecimento aplicado às demandas regionais.', color: 'primary' },
+    { icon: TrendingUp, title: 'Empreendedorismo', description: 'Formação empreendedora e estímulo a negócios sustentáveis em Roraima.', color: 'accent' },
+    { icon: Lightbulb, title: 'Inovação', description: 'Conexão entre conhecimento científico, tecnologia e soluções para a sociedade.', color: 'primary-light' },
+    { icon: Briefcase, title: 'Assessoria Técnica', description: 'Apoio técnico e orientação para melhorar processos, projetos e gestão.', color: 'accent-bright' },
+    { icon: Sprout, title: 'Assistência Técnica Rural', description: 'Assistência Técnica e Extensão Rural (ATER), com acompanhamento no campo e apoio aos produtores.', color: 'complement' },
+    { icon: FileText, title: 'Estudos Técnicos', description: 'Estudos e análises para subsidiar o planejamento e o desenvolvimento territorial.', color: 'primary' },
+    { icon: Calendar, title: 'Eventos', description: 'Congressos, seminários e encontros para disseminar conhecimentos e conectar pessoas.', color: 'accent' },
+    { icon: Globe, title: 'Internacionalização', description: 'Iniciativas de comércio exterior, integração fronteiriça e conexões com novos mercados.', color: 'primary-light' },
+    { icon: MonitorSmartphone, title: 'Inserção Digital', description: 'Formação em ferramentas digitais, e-commerce e marketing digital para empreendedores.', color: 'complement' },
   ];
 
   const colorClasses = {
@@ -65,17 +26,17 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-neutral-100 rounded-full border border-neutral-200 mb-6">
-            <span className="text-sm font-semibold text-primary">Nossos Serviços</span>
+            <span className="text-sm font-semibold text-primary">Nossas Frentes</span>
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-primary-dark mb-4">
             Áreas de Atuação
           </h2>
           <p className="text-xl text-text/80 max-w-3xl mx-auto">
-            Atuamos em diversas frentes para promover desenvolvimento sustentável e inovação social
+            Atuação em Roraima, integrando tecnologia, conhecimento, empreendedorismo e desenvolvimento rural.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
