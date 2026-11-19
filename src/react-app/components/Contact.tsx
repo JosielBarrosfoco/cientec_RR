@@ -1,6 +1,19 @@
+import type { FormEvent } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
 export default function Contact() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const body = [
+      `Nome: ${String(formData.get('name') || '')}`,
+      `E-mail: ${String(formData.get('email') || '')}`,
+      `Telefone: ${String(formData.get('phone') || '')}`,
+      '',
+      String(formData.get('message') || ''),
+    ].join('\n');
+    window.location.href = `mailto:cientecrr@gmail.com?subject=${encodeURIComponent('Contato pelo site do CIENTEC-RR')}&body=${encodeURIComponent(body)}`;
+  };
   return (
     <section id="contato" className="py-24 bg-neutral-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -41,7 +54,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-bold text-primary-dark mb-2">Telefone</h3>
                 <p className="text-text/80">
-                  +55 95 991597963
+                  <a href="tel:+5595991597963" className="hover:text-primary">+55 (95) 99159-7963</a>
                 </p>
               </div>
             </div>
@@ -53,7 +66,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-bold text-primary-dark mb-2">E-mail</h3>
                 <p className="text-text/80">
-                  cientecrr@gmail.com
+                  <a href="mailto:cientecrr@gmail.com" className="hover:text-primary">cientecrr@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -75,7 +88,7 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-2xl border border-neutral-200">
             <h3 className="text-2xl font-bold text-primary-dark mb-6">Envie uma Mensagem</h3>
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-text mb-2">
                   Nome Completo
@@ -83,6 +96,8 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  required
                   className="w-full px-4 py-3 rounded-xl border border-neutral-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none"
                   placeholder="Seu nome"
                 />
@@ -94,6 +109,8 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-3 rounded-xl border border-neutral-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none"
                   placeholder="seu@email.com"
                 />
@@ -105,6 +122,7 @@ export default function Contact() {
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
                   className="w-full px-4 py-3 rounded-xl border border-neutral-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none"
                   placeholder="(00) 00000-0000"
                 />
@@ -115,11 +133,14 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
+                  required
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-neutral-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none resize-none"
                   placeholder="Como podemos ajudar?"
                 ></textarea>
               </div>
+              <p className="text-xs text-text/70">Ao enviar, seu aplicativo de e-mail será aberto para revisar a mensagem antes do envio.</p>
               <button
                 type="submit"
                 className="w-full inline-flex items-center justify-center py-4 px-6 bg-primary text-white font-bold rounded-xl hover:bg-accent hover:shadow-lg transform hover:scale-105 transition-all duration-300"
