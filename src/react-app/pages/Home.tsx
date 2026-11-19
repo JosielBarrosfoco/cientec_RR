@@ -3,6 +3,7 @@ import Hero from '@/react-app/components/Hero';
 import About from '@/react-app/components/About';
 import Services from '@/react-app/components/Services';
 import Team from '@/react-app/components/Team';
+import Evidence from '@/react-app/components/Evidence';
 import Participate from '@/react-app/components/Participate';
 import Contact from '@/react-app/components/Contact';
 import Footer from '@/react-app/components/Footer';
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Evidence />
       <Team />
       <Participate />
       <Contact />
