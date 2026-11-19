@@ -35,8 +35,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-xl text-text/80 mb-8 leading-relaxed max-w-xl">
-              Transformando comunidades através da educação, pesquisa e inovação social. 
-              Juntos construímos um futuro mais justo, tecnológico e sustentável.
+              Desde 2024, o CIENTEC-RR conecta inovação, educação, empreendedorismo e assistência técnica rural para ampliar oportunidades e fortalecer o desenvolvimento sustentável de Roraima.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -60,23 +59,23 @@ export default function Hero() {
               <div>
                 <div className="flex items-center mb-2">
                   <Target className="text-primary mr-2" size={20} />
-                  <p className="text-3xl font-bold text-primary-dark">50+</p>
+                  <p className="text-3xl font-bold text-primary-dark">300+</p>
                 </div>
-                <p className="text-sm text-text/70">Projetos Ativos</p>
+                <p className="text-sm text-text/70">Pessoas beneficiadas</p>
               </div>
               <div>
                 <div className="flex items-center mb-2">
                   <Users className="text-accent mr-2" size={20} />
-                  <p className="text-3xl font-bold text-primary-dark">5K+</p>
+                  <p className="text-3xl font-bold text-primary-dark">600+</p>
                 </div>
-                <p className="text-sm text-text/70">Vidas Impactadas</p>
+                <p className="text-sm text-text/70">Horas de aprendizado</p>
               </div>
               <div>
                 <div className="flex items-center mb-2">
                   <Sparkles className="text-complement mr-2" size={20} />
-                  <p className="text-3xl font-bold text-primary-dark">15+</p>
+                  <p className="text-3xl font-bold text-primary-dark">2024</p>
                 </div>
-                <p className="text-sm text-text/70">Anos de Experiência</p>
+                <p className="text-sm text-text/70">Ano de fundação</p>
               </div>
             </div>
           </div>
@@ -104,9 +103,9 @@ export default function Hero() {
               
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600" 
-                  alt="Team collaboration"
-                  className="w-64 h-64 object-cover rounded-2xl shadow-2xl"
+                  src="/images/portfolio-2026/evento-painel-cientec-2026.jpg" 
+                  alt="Registro de atividade institucional do CIENTEC-RR em 2026"
+                  className="w-72 h-72 object-cover rounded-2xl shadow-2xl"
                 />
               </div>
             </div>

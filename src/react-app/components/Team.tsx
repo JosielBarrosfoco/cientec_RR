@@ -5,38 +5,37 @@ export default function Team() {
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const directors = [
     {
-      name: 'LUCI CAMPELO',
+      name: 'André Araújo',
       role: 'Presidente',
-      image: '/images/presidente-luci-campelo.png',
-      bio: 'Especialista em consultoria financeira, assessoria e consultoria de negócios, com sólida experiência em planejamento financeiro e análise financeira. Atua também em consultoria educacional e política, promovendo segurança financeira de longo prazo e sustentabilidade patrimonial. Exercendo a presidência do Instituto com liderança técnica, ética e compromisso institucional com resultados consistentes.',
-      linkedin: 'https://www.linkedin.com/in/luci-campelo-38194269/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      image: '/images/portfolio-2026/diretoria-andre-araujo.jpg',
+      bio: 'Presidência e coordenação institucional do CIENTEC-RR.',
+      linkedin: 'https://www.linkedin.com/in/andr%C3%A9-mateus-ara%C3%BAjo-32294a192/',
     },
     {
-      name: 'Glória dos Santos Almeida',
-      role: 'Diretora Jurídico-Institucional',
-      image: '/images/diretora-juridica-gloria-almeida.png',
-      bio: 'Atua como Diretora Jurídico-Institucional, sendo responsável pela condução estratégica das diretrizes jurídicas e pelo fortalecimento da governança institucional. Possui atuação pautada na ética, na conformidade legal e na segurança das decisões organizacionais. Contribui para a sustentabilidade, credibilidade e integridade institucional do Instituto.',
+      name: 'Glória Almeida',
+      role: 'Diretora Jurídica',
+      image: '/images/portfolio-2026/diretoria-gloria-almeida.jpg',
+      bio: 'Direção jurídica e apoio à governança institucional.',
       linkedin: 'https://www.linkedin.com/in/gloria-dos-s-almeida-barbosa-67b10a1b0/?originalSubdomain=br',
     },
     {
-      name: 'Candice Diniz',
-      role: 'Diretora Educacional e Pedagógica',
-      image: '/images/diretora-educacional-candice-diniz.png',
-      bio: 'Educar é cuidar de pessoas e construir futuros. Seguimos firmes no compromisso com ensino de qualidade, metodologia bem estruturada e evolução contínua.',
+      name: 'Luci Campelo',
+      role: 'Diretora Administrativo-Financeira',
+      image: '/images/portfolio-2026/diretoria-luci-campelo.jpg',
+      bio: 'Gestão administrativa e financeira da instituição.',
+      linkedin: 'https://www.linkedin.com/in/luci-campelo-38194269/',
     },
     {
-      name: 'IVAN GONZALO',
-      role: 'Diretor de Inovação e Tecnologia',
-      image: '/images/diretor-inovacao-ivan-gonzalo.png',
-      bio: 'Atua como Analista de Comércio Exterior, sendo responsável pela gestão e acompanhamento de operações de importação e exportação, assegurando conformidade com a legislação aduaneira e regulatória. Possui atuação estratégica na análise de mercados, processos logísticos e negociações internacionais. Contribui para a eficiência operacional e o fortalecimento das relações comerciais do Instituto.',
-      linkedin: 'https://www.linkedin.com/in/ivan-gonzalo/',
+      name: 'Tyara Level',
+      role: 'Diretora de Inovação e Tecnologia',
+      image: '/images/portfolio-2026/diretoria-tyara-level.jpg',
+      bio: 'Coordenação das frentes de inovação e tecnologia.',
     },
     {
-      name: 'André Mateus Araújo',
-      role: 'Diretor Administrativo-Financeiro',
-      image: '/images/diretor-administrativo-andre-mateus.png',
-      bio: 'Diretor Administrativo-Financeiro, sendo responsável pela gestão administrativa e pelo planejamento financeiro da instituição, assegurando controle, eficiência e sustentabilidade dos recursos. Sua atuação é pautada na organização dos processos, na transparência e na tomada de decisões estratégicas. Contribui para o equilíbrio financeiro e o fortalecimento institucional do Instituto.',
-      linkedin: 'https://www.linkedin.com/in/andr%C3%A9-mateus-ara%C3%BAjo-32294a192/',
+      name: 'Kátia Lopes',
+      role: 'Diretora de Desenvolvimento, Projetos e Relações Institucionais',
+      image: '/images/portfolio-2026/diretoria-katia-lopes.jpg',
+      bio: 'Desenvolvimento de projetos e articulação institucional.',
     },
   ];
 
@@ -69,6 +68,7 @@ export default function Team() {
             <button
               type="button"
               onClick={() => scrollCarousel('prev')}
+              aria-label="Ver integrantes anteriores"
               className="h-12 w-12 rounded-full bg-white/90 text-primary shadow-lg border border-neutral-200 hover:bg-white focus:outline-none"
             >
               ‹
@@ -78,6 +78,7 @@ export default function Team() {
             <button
               type="button"
               onClick={() => scrollCarousel('next')}
+              aria-label="Ver próximos integrantes"
               className="h-12 w-12 rounded-full bg-white/90 text-primary shadow-lg border border-neutral-200 hover:bg-white focus:outline-none"
             >
               ›
@@ -97,13 +98,15 @@ export default function Team() {
                 <div className="relative overflow-hidden h-80">
                   <img
                     src={director.image}
-                    alt={director.name}
+                    alt={`Retrato de ${director.name}, ${director.role}`}
+                    loading="lazy"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div className="flex space-x-3">
                       {director.linkedin && (
                         <a
+                          aria-label={`LinkedIn de ${director.name}`}
                           href={director.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -112,9 +115,9 @@ export default function Team() {
                           <Linkedin size={20} />
                         </a>
                       )}
-                      <button className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all">
+                      <a href="mailto:cientecrr@gmail.com" aria-label="Enviar e-mail ao CIENTEC-RR" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all">
                         <Mail size={20} />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

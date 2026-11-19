@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -11,28 +11,15 @@ export default function Footer() {
               <img 
                 src="/images/logo-cientec.png" 
                 alt="CienTec - Centro de Inovação, Empreendedorismo e Tecnologia de Roraima" 
-                className="h-12 md:h-16 w-auto object-contain brightness-0 invert"
+                className="h-12 md:h-16 w-auto max-w-[240px] object-contain grayscale invert mix-blend-screen"
               />
             </div>
             <p className="text-white/80 leading-relaxed mb-6 max-w-md">
-              Liderança e Inovação para um Futuro Sustentável. Transformando comunidades através da educação, 
-              pesquisa e inovação social com impacto real e duradouro.
+              Desde 2024, o CIENTEC-RR conecta educação, inovação, empreendedorismo e assistência técnica rural ao desenvolvimento sustentável de Roraima.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary-light transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="https://www.instagram.com/cientecroraima/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary-light transition-colors">
+              <a aria-label="Instagram do CIENTEC-RR" href="https://www.instagram.com/cientecroraima/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary-light transition-colors">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary-light transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary-light transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary-light transition-colors">
-                <Youtube size={20} />
               </a>
             </div>
           </div>
@@ -43,6 +30,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><a href="#sobre" className="text-white/80 hover:text-primary-light transition-colors">Sobre Nós</a></li>
               <li><a href="#areas" className="text-white/80 hover:text-primary-light transition-colors">Áreas de Atuação</a></li>
+              <li><a href="#resultados" className="text-white/80 hover:text-primary-light transition-colors">Resultados e Evidências</a></li>
               <li><a href="#diretoria" className="text-white/80 hover:text-primary-light transition-colors">Diretoria</a></li>
               <li><a href="#participar" className="text-white/80 hover:text-primary-light transition-colors">Como Participar</a></li>
               <li><a href="#contato" className="text-white/80 hover:text-primary-light transition-colors">Contato</a></li>
@@ -59,7 +47,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={18} className="text-primary-light flex-shrink-0" />
-                <span className="text-white/80 text-sm">+55 95 991597963</span>
+                <span className="text-white/80 text-sm">+55 (95) 99159-7963</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={18} className="text-primary-light flex-shrink-0" />
@@ -75,16 +63,14 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} CienTec. Todos os direitos reservados.
             </p>
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-white/60">
-              <a href="#" className="hover:text-primary-light transition-colors">Política de Privacidade</a>
-              <a href="#" className="hover:text-primary-light transition-colors">Termos de Uso</a>
-              <span className="hidden md:inline">|</span>
+              
               <a 
-                href="https://josielbarros.dev/" 
+                href="https://plagesystem.com.br/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-primary-light transition-colors"
               >
-                Criado por <span className="font-semibold">Josiel.dev</span>
+                Desenvolvido por <span className="font-semibold text-white">PLAGE SYSTEM</span>
               </a>
             </div>
           </div>

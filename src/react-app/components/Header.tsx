@@ -7,6 +7,7 @@ export default function Header() {
   const navigation = [
     { name: 'Sobre Nós', href: '#sobre' },
     { name: 'Áreas de Atuação', href: '#areas' },
+    { name: 'Resultados', href: '#resultados' },
     { name: 'Diretoria', href: '#diretoria' },
     { name: 'Como Participar', href: '#participar' },
     { name: 'Contato', href: '#contato' },
@@ -55,6 +56,8 @@ export default function Header() {
           <div className="lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+              aria-expanded={mobileMenuOpen}
               className="text-text hover:text-primary p-2"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
