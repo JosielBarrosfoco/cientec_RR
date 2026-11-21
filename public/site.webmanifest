@@ -1,0 +1,17 @@
+{
+  "name": "CIENTEC RR",
+  "short_name": "CIENTEC",
+  "description": "Centro de Inovação, Empreendedorismo e Tecnologia de Roraima",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#004B82",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
