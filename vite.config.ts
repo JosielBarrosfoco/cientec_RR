@@ -15,9 +15,6 @@ export default defineConfig({
     // Apenas adiciona o plugin do Cloudflare se não estiver no Vercel
     ...(isVercel ? [] : [cloudflare()]),
   ],
-  server: {
-    allowedHosts: true,
-  },
   build: {
     chunkSizeWarningLimit: 5000,
     outDir: "dist",
