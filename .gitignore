@@ -2,3 +2,9 @@ dist/
 node_modules/
 .wrangler/
 .dev.vars
+.env
+.env.*
+!.env.example
+.vercel/
+coverage/
+*.log
